@@ -1,0 +1,4 @@
+!.gitignore
+*.vim
+*.swp
+*.swo
