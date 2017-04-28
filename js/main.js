@@ -1,3 +1,3 @@
 $(function() {
-    $('#profile-photo').lazy();
+    $('#profile-photo').lazy({effect: 'fadeIn', effectTime: 200});
 });
