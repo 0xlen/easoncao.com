@@ -38,7 +38,7 @@ body {
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
     background-repeat: no-repeat;
-    background-position:-188px 3%;
+    background-position:-80px 3%;
     background-size: cover;
     z-index: -1;
     position: fixed;
