@@ -1,11 +1,19 @@
 language: ruby
 cache: bundler
 gemfile: docs/Gemfile
-script:
-  - bundle exec jekyll algolia --source docs --destination docs/_site --config docs/_config.yml
+#script:
+#  - bundle exec jekyll algolia --source docs --destination docs/_site --config docs/_config.yml
 branches:
   only:
     # Change this to gh-pages if you're deploying using the gh-pages branch
-    - master
+    - blog
+# Assume bundler is being used, therefore
+# the `install` step will run `bundle install` by default.
+script:
+    - git config --global user.email "eason@easoncao.com"
+    - git config --global user.name "Eason Cao"
+    - git clone https://$GH_TOKEN@github.com/0xlen/easoncao.com easoncao.com
+    - cd easoncao.com/
+    - ./bin/travis-build
 rvm:
  - 2.4
